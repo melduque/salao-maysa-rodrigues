@@ -253,3 +253,54 @@ h2{
   transform: translateY(-4px);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
 }
+
+/* Seção "Quem sou eu" */
+#sobremim {
+  background-color: var(--container2);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.foto-sobremim {
+  width: 250px !important;
+  height: 250px !important;
+  max-width: 250px;
+  max-height: 250px;
+  object-fit: cover;
+  border: 5px solid var(--primary);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foto-sobremim:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 14px rgba(179, 109, 99, 0.3);
+}
+
+.descricao-sobremim {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+@media (max-width: 768px) {
+  #sobremim {
+    text-align: center;
+    width: 90%;
+  }
+
+  .foto-sobremim {
+    width: 300px !important;
+    height: 300px !important;
+    max-width: 300px;
+    max-height: 300px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .descricao-sobremim {
+    font-size: 0.97rem;
+    padding: 0 10px;
+  }
+}
